@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Personal Mood Journal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌟 Personal Mood Journal 🌟</h1>
+    <p>Log your mood and activities to track your day interactively!</p>
+  </header>
+  <main>
+    <section class="mood-section">
+      <h2>Select Your Current Mood:</h2>
+      <div class="mood-buttons">
+        <button data-mood="happy">😊 Happy</button>
+        <button data-mood="calm">😌 Calm</button>
+        <button data-mood="sad">😢 Sad</button>
+        <button data-mood="excited">🤩 Excited</button>
+        <button data-mood="stressed">😟 Stressed</button>
+      </div>
+    </section>
+    
+    <section class="activity-section">
+      <h2>What Did You Do?</h2>
+      <input type="text" id="activity-input" placeholder="E.g., Went for a walk">
+      <button id="log-activity">Log Activity</button>
+    </section>
+
+    <section class="journal-section">
+      <h2>Your Mood Journal:</h2>
+      <ul id="journal-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ to track your best moments!</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
